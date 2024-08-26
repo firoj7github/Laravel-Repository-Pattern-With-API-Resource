@@ -36,6 +36,7 @@ Route::get('/countrys',[ProductController::class, 'getcountry']);
 //     Route::get('logout', [UserController::class, 'userLogout']);
 // });
 Route::post('login', [UserController::class, 'loginuser']);
+Route::post('signup', [UserController::class, 'registeruser']);
 Route::middleware('auth:api')->group(function(){
     Route::get('/products',[ProductController::class, 'getproduct']);
 });
