@@ -20,7 +20,7 @@ use App\Http\Controllers\UserController;
 //     return $request->user();
 // });
 Route::post('/product/create',[ProductController::class, 'apistore']);
-Route::get('/products',[ProductController::class, 'getproduct']);
+// Route::get('/products',[ProductController::class, 'getproduct']);
 Route::get('/customers',[ProductController::class, 'getcustomer']);
 Route::get('/countrys',[ProductController::class, 'getcountry']);
 
@@ -37,5 +37,5 @@ Route::get('/countrys',[ProductController::class, 'getcountry']);
 // });
 Route::post('login', [UserController::class, 'loginuser']);
 Route::middleware('auth:api')->group(function(){
-   
+    Route::get('/products',[ProductController::class, 'getproduct']);
 });

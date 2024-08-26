@@ -3,7 +3,7 @@
 
 @section('content')
 
-<h1 class="text-center mt-2">All Products</h1>
+{{-- <h1 class="text-center mt-2">All Products</h1>
 <hr>
 <br>
 
@@ -21,13 +21,13 @@
                   <hr>
                   <button class="btn btn-warning">Edit</button>
                   <button class="btn btn-danger">Delete</button>
-                  
+
                 </div>
               </div>
             @endforeach
         </div>
     </div>
 </div>
-
+ --}}
 
 @endsection
